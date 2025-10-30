@@ -1,2 +1,3 @@
-# ebac_preparacaoo_de_dados
-Atividades do curso de cientista de dados, modulo de preparação de dados.
+# Preparacaoo de Dados
+Atividades do curso de cientista de dados. 
+Modulo de PREPARAÇÃO DE DADOS.
