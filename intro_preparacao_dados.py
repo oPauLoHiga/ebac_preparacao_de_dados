@@ -7,11 +7,11 @@ print(df.head().to_string())
 print(df.tail().to_string())
 df['data'] = pd.to_datetime(df['data'], format='%d/%m/%Y', errors='coerce')
 
-print('Verificação: ')
+print('Verificação Inicial: ')
 print(df.info())
 
 print('Analise de dados nulos:\n', df.isnull().sum())
-print('% de dados nulos:\n ',df.isnull.mean() * 100)
+print('% de dados nulos:\n ',df.isnull().mean() * 100)
 df.dropna(inplace=True)
 print('Confirmar remoção de dados nulus:\n', df.isnull().sum())
 
@@ -21,8 +21,7 @@ print('Analise de dados únicos:\n', df.nunique())
 
 print('Estatisticas dos dados:\n', df.describe())
 
-df = df[['idade','data','estado','salario','nivel-educacao',
-         'numero_filhos','estado_civel','area_atuacao']]
+df = df[['idade', 'data', 'estado', 'salario','nivel_educacao','numero_filhos', 'estado_civil', 'area_atuacao']]
 print(df.head().to_string())
 
 df.to_csv('clientes-v2-tratados.csv', index=False)
